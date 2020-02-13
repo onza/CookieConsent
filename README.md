@@ -4,17 +4,35 @@
 
 ### A cookie consent opt-in implementation script for websites
 
-### Features
-* Google Analytics, Pardot (Salesforce), YouTube - but extendable for other cookies.
-* YouTube cookies can either be confirmed by the cookie banner or directly on the videos.
-* Styles for Banner and YouTube Video overlay.
-* Cookie settings can be changed via the menu.
-* Cookies in the settings are grouped as "Essential Cookies", "Marketing/Analysis", "YouTube".
+## Features
+* Until now Google Analytics, Pardot (Salesforce), YouTube (just replace GA & Pardot ID...)
+* Cookie providers that are not required can be commented out or deleted.
+* Extendable for other cookies.
+* YouTube cookies can either be confirmed by the cookie banner or directly on the videos (HTML structure has to be adjusted - see below).
+* CSS for Consent Banner and for YouTube Video overlay.
+* Cookie settings can be changed via checkboxes on the banner.
+* Cookies in the banner settings are grouped as "Essential Cookies", "Marketing/Analysis", "YouTube" but can be changed easily.
 * Already accepted cookies are not deleted, but the scripts are removed from the DOM. Further read e.g. [Google Developers Guide](https://developers.google.com/analytics/devguides/collection/gtagjs/user-opt-out).
 * Multilanguage support.
 * \>= IE 11 support (not tested below IE11)
 
-### Requirement for YouTube cookie consent
+<br>
+
+## Requirement for Google Analytics and Pardot
+* Replace IDs in **CookieConsent.js**:
+```
+  googlesitetag: {
+    gt_id: 'UA-XXXXXXXXXX-X'
+  },
+  pardot: {
+    piAId: 'xxxxx',
+    piCId: 'xxxx'
+  },
+```
+
+<br>
+
+## Requirement for YouTube
 * The HTML structure has to be adapted for YouTube:
 ```
 <div id="video__wrapper-id" class="youtubevideo" data-yt_video_src="https://www.youtube-nocookie.com/embed/{YOUTUBE-VIDEO_ID}?controls=0">
