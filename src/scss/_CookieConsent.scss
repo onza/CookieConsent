@@ -5,7 +5,7 @@
 * @Email:  info@websites-graphix.com
 */
 
-/* settings button */
+// settings button
 .cookieconsent__settings-button {
   position: fixed;
   bottom: 0;
@@ -17,13 +17,13 @@
   color: #fff;
   font-size: 1.0rem;
   text-decoration: underline;
-}
-.cookieconsent__settings-button:hover {
-  transform: translateY(0);
-  cursor: pointer;
+  &:hover {
+    transform: translateY(0);
+    cursor: pointer;
+  }
 }
 
-/* banner */
+// banner overlay
 .cookieconsent__overlay {
   position: fixed;
   top: 0;
@@ -37,7 +37,7 @@
   z-index: 99999999999999;
 }
 
-/* banner */
+// banner
 .cookieconsent-banner {
   position: relative;
   width: 100%;
@@ -47,31 +47,30 @@
   background: #fff;
   overflow: hidden;
   z-index: 999999999999999;
-}
-@media (min-width: 600px) {
-  .cookieconsent-banner {
-    margin: 30px auto;
+  @media (min-width: 600px) {
+    .cookieconsent-banner {
+      margin: 30px auto;
+    }
   }
-}
-.cookieconsent-banner__h3 {
-  color: #333;
-  line-height: 1.1;
-  font-size: 1.3rem;
-  margin: 0;
-  padding: 0 0 15px;
-}
-.cookieconsent-banner__p {
-  color: #333;
-  line-height: 1.2;
-  font-size: 1.0rem;
-}
-.cookieconsent-banner__p a {
-  color: #333;
-  line-height: 1.1;
-  font-size: 1.0rem;
-  font-weight: 400;
-  text-decoration: underline;
-}
+  .cookieconsent-banner__h3 {
+    color: #333;
+    line-height: 1.1;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0 0 15px;
+  }
+  .cookieconsent-banner__p {
+    color: #333;
+    line-height: 1.2;
+    font-size: 1.0rem;
+     a {
+      color: #333;
+      line-height: 1.1;
+      font-size: 1.0rem;
+      font-weight: 400;
+      text-decoration: underline;
+    }
+  }
 button.cookieconsent-banner__button--settings {
   color: #333;
   line-height: 1.1;
@@ -90,10 +89,9 @@ button.cookieconsent-banner__button--settings {
   padding: 5px 40px;
   background-color: #aec067;
   border: 1px solid #aec067;
-}
-@media (max-width: 599px) {
-  .cookieconsent-banner__button {
-    width: 100%;
+  @media (max-width: 599px) {
+      width: 100%;
+    }
   }
 }
 @media (min-width: 600px) {
@@ -105,17 +103,19 @@ button.cookieconsent-banner__button--settings {
   }
 }
 
-/* settings */
-.cookieconsent-banner__settings .cookieconsent-banner__settings-label--required {
-  color: #9f9f9f;
-}
-.cookieconsent-banner__settings .cookieconsent-banner__p {
-  margin: 5px 0 0 22px;
-  padding: 0 0 10px;
-}
-.cookieconsent-banner__settings .cookieconsent-banner__p a {
-  display: block;
-  margin: 0 0 30px 0;
+// settings
+.cookieconsent-banner__settings {
+  .cookieconsent-banner__settings-label--required {
+    color: #9f9f9f;
+  }
+  .cookieconsent-banner__p {
+    margin: 5px 0 0 22px;
+    padding: 0 0 10px;
+    a {
+      display: block;
+      margin: 0 0 30px 0;
+    }
+  }
 }
 .cookieconsent-banner input {
   cursor: pointer;
@@ -125,6 +125,8 @@ button.cookieconsent-banner__button--settings {
   font-size: 1.1rem;
   font-weight: 400;
 }
+
+// button modifier
 .is-centered {
   display: block;
   float: none;
