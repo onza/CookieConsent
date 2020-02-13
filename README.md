@@ -3,11 +3,12 @@
 ### A cookie consent implementation script for websites
 
 ### Features
-* Google Analytics, Pardot (Salesforce), YouTube
+* Google Analytics, Pardot (Salesforce), YouTube - but extendable for other cookies.
 * YouTube cookies can either be confirmed by the cookie banner or directly on the videos.
 * Styles for Banner and YouTube Video overlay.
 * Cookie settings can be changed via the menu.
-* Extendable for other cookies
+* Cookies in the settings are grouped as "Essential Cookies", "Marketing/Analysis", " YouTube".
+* Multilanguage support.
 * \>= IE 11 support (not tested below)
 
 ### Requirement for YouTube cookie consent
