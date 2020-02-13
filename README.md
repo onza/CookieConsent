@@ -1,4 +1,4 @@
-# CookieConsent
+# Cookie Consent
 
 ### A cookie consent implementation script for websites
 
@@ -9,7 +9,7 @@
 * Cookie settings can be changed via the menu.
 * Cookies in the settings are grouped as "Essential Cookies", "Marketing/Analysis", " YouTube".
 * Multilanguage support.
-* \>= IE 11 support (not tested below)
+* \>= IE 11 support (not tested below IE11)
 
 ### Requirement for YouTube cookie consent
 * The HTML structure has to be adapted for YouTube:
