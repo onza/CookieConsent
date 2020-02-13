@@ -22,7 +22,7 @@ function buildcss() {
     .pipe(autoprefixer({
       cascade: false
     }))
-  .pipe(dest('lib/css/CookieConsent.css'))
+  .pipe(dest('lib/css/'))
 }
 
 const build = parallel(buildjs, buildcss)
