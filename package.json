@@ -1,0 +1,23 @@
+{
+  "name": "cookieconsent",
+  "version": "1.0.0",
+  "description": "foobar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onza/CookieConsent.git"
+  },
+  "author": "Martin Farkas, Robin Danzinger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onza/CookieConsent/issues"
+  },
+  "homepage": "https://github.com/onza/CookieConsent#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4"
+  }
+}
