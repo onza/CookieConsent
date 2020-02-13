@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Cookie Consent Demo</title>
+    <title>CookieConsent opt-in script demo</title>
     <link rel="stylesheet" href="lib/css/CookieConsent.css">
     <style>
       html,
@@ -17,14 +17,21 @@
         max-width: 1200px;
         background-color: #fff;
       }
-      h1 {
-        text-align: center;
-        margin: 40px 0 100px;
+      h1 { text-align: center; margin: 100px 0 60px; }
+      .gh-buttons { float: right; }
+      .gh-buttons::after { clear: both; }
+      .youtubevideo {
+        display: block;
+        margin: auto;
       }
     </style>
   </head>
   <body>
     <div class="container">
+      <div class="gh-buttons">
+        <a class="github-button" href="https://github.com/onza/CookieConsent" aria-label="Watch ntkme/github-buttons on GitHub">Watch</a>
+        <a class="github-button" href="https://github.com/ntkme/github-buttons/archive/master.zip" aria-label="Download ntkme/github-buttons on GitHub">Download</a>
+      </div>
       <h1>Cookie Consent Demo</h1>
       <div id="video__wrapper-id" class="youtubevideo" data-yt_video_src="https://www.youtube-nocookie.com/embed/7f8GVcgYzqs?controls=0">
         <div class="youtubevideo__container">
@@ -39,5 +46,6 @@
       </div>
     </div>
     <script src="lib/js/CookieConsent.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>
