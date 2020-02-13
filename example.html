@@ -1,18 +1,40 @@
 <html>
   <head>
     <title>Cookie Consent Demo</title>
-    <link rel="stylesheet" href="lib/css/style.css">
+    <link rel="stylesheet" href="lib/css/CookieConsent.css">
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #eee;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        margin: auto;
+        padding: 20px;
+        width: 100%;
+        max-width: 1200px;
+        background-color: #fff;
+      }
+      h1 {
+        text-align: center;
+        margin: 40px 0 100px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Cookie Consent Demo</h1>
-    <div id="video__wrapper-id" class="youtubevideo" data-yt_video_src="https://www.youtube-nocookie.com/embed/{YOUTUBE-VIDEO_ID}?controls=0">
-      <div class="youtubevideo__container">
-        <iframe height="343" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="youtubevideo__consentbanner js-ytbanner">
-        <div class="youtubevideo__consentbanner-wrapper">
-          <div class="youtubevideo__consentbanner-text">By loading the video, you accept YouTube's privacy policy.</div>
-          <button onclick="showYoutubeVideo('video__wrapper-id')">load video</button>
+    <div class="container">
+      <h1>Cookie Consent Demo</h1>
+      <div id="video__wrapper-id" class="youtubevideo" data-yt_video_src="https://www.youtube-nocookie.com/embed/7f8GVcgYzqs?controls=0">
+        <div class="youtubevideo__container">
+          <iframe height="343" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="youtubevideo__consentbanner js-ytbanner">
+          <div class="youtubevideo__consentbanner-wrapper">
+            <div class="youtubevideo__consentbanner-text">By loading the video, you accept YouTube's privacy policy.</div>
+            <button onclick="showYoutubeVideo('video__wrapper-id')">load video</button>
+          </div>
         </div>
       </div>
     </div>
