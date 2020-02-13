@@ -4,6 +4,8 @@
 * @Date:   2020-01-29
 * @Email:  info@websites-graphix.com
 */
+/* cookie consent banner
+--------------------------------------------------------------------------------------------------------- */
 .cookieconsent__settings-button {
   position: fixed;
   bottom: 0;
@@ -108,3 +110,46 @@
   display: block;
   float: none;
   margin: 30px auto 0; }
+
+/* youtube video overlay
+--------------------------------------------------------------------------------------------------------- */
+.youtubevideo {
+  position: relative;
+  width: 100%;
+  max-width: 610px; }
+  .youtubevideo .youtubevideo__container {
+    margin: 0 0 60px 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    /* ratio 16x9 */
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    height: auto; }
+    .youtubevideo .youtubevideo__container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .youtubevideo .youtubevideo__consentbanner {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8); }
+    .youtubevideo .youtubevideo__consentbanner .youtubevideo__consentbanner-wrapper {
+      width: 100%; }
+      .youtubevideo .youtubevideo__consentbanner .youtubevideo__consentbanner-wrapper .youtubevideo__consentbanner-text {
+        color: #fff;
+        text-align: center;
+        margin: 20px; }
+      .youtubevideo .youtubevideo__consentbanner .youtubevideo__consentbanner-wrapper button {
+        display: block;
+        border: 1px solid #fff;
+        background-color: #fff;
+        padding: 5px 15px;
+        margin: auto; }
