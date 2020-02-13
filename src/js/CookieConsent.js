@@ -12,7 +12,7 @@ import "core-js/stable"
 
 window.cookieconsent = {
   googlesitetag: {
-    gt_id: 'UA-UA-XXXXXXXXXX-X'
+    gt_id: 'UA-XXXXXXXXXX-X'
   },
   pardot: {
     piAId: 'xxxxx',
