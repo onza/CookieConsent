@@ -1,5 +1,3 @@
-... in progress
-
 # Cookie Consent (Opt-In)
 
 ### A cookie consent opt-in implementation script for websites
@@ -50,3 +48,9 @@
 </div>
 ```
 * Replace `{YOUTUBE-VIDEO_ID}` with YouTube video ID.
+
+<br>
+
+## To dos
+* Move all tasks from Gulp to Webpack (or the other way).
+* Add more cookie provider
