@@ -4,6 +4,8 @@
 
 ### A cookie consent opt-in implementation script for websites
 
+[Watch Demo](https://onza.github.io/cookieConsent)
+
 ## Features
 * Until now Google Analytics, Pardot (Salesforce), YouTube (just replace GA & Pardot ID...)
 * Cookie providers that are not required can be commented out or deleted.
@@ -14,7 +16,7 @@
 * Cookies in the banner settings are grouped as "Essential Cookies", "Marketing/Analysis", "YouTube" but can be changed easily.
 * Already accepted cookies are not deleted, but the scripts are removed from the DOM. Further read e.g. [Google Developers Guide](https://developers.google.com/analytics/devguides/collection/gtagjs/user-opt-out).
 * Multilanguage support by reading out the lang attribute.
-* \>= IE 11 support (not tested below IE11) by polyfills.
+* To support IE 11 (not tested below IE11) include lib/js/polyfills.js before CookieConsent.js.
 
 <br>
 
