@@ -5,9 +5,6 @@
 * @Email:  info@websites-graphix.com
 */
 
-// needed for ie11 polyfill
-import "core-js/stable"
-
 /* COOKIECONSENT CONFIGURATION */
 
 window.cookieconsent = {
