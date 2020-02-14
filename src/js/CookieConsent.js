@@ -253,7 +253,7 @@ function showCookieConsentSettings() {// eslint-disable-line no-unused-vars
             ${checkboxes}
           </div>
           <button class="cookieconsent-banner__button is-centered" onclick='allowOnly()'>Confirm Selection</button>
-          <!-- <button onclick='showCookieConsentBanner()'> zurück </button> -->
+          <!-- <button onclick='showCookieConsentBanner()'> back </button> -->
         </div>
       </div> 
     `;
