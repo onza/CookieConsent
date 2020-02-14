@@ -4,6 +4,6 @@ module.exports = {
   entry: './src/polyfills.js',
   output: {
     filename: 'polyfills.js',
-    path: path.resolve(__dirname, 'lib'),
+    path: path.resolve(__dirname, 'lib/js'),
   },
 };
