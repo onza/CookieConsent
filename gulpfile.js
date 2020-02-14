@@ -2,6 +2,7 @@ const { series, parallel, src, dest } = require('gulp');
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const babel = require('gulp-babel')
+const eslint = require('gulp-eslint')
 const del = require('del')
 
 function clean() {
@@ -10,6 +11,8 @@ function clean() {
 
 function buildjs() {
   return src('src/js/*.js')
+    .pipe(eslint())
+    .pipe(eslint.failAfterError())
     .pipe(babel({
       presets: ['@babel/preset-env']
     }))

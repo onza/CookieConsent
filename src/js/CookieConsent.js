@@ -60,8 +60,8 @@ window.cookieconsent = {
       text_de: `
         <label for="option2">Youtube</label>
         <p class="cookieconsent-banner__p">
-          Durch das Akzeptieren von YouTube-Cookies akzeptieren Sie die Datenschutzbestimmungen von YouTube.
-          Unabhängig von dieser Einstellung können Sie die YouTube-Cookies auch direkt auf den Videos auf dieser Website akzeptieren.
+          Durch das Akzeptieren von YouTube-Cookies akzeptieren Sie die Datenschutzbestimmungen von YouTube. 
+          Unabhängig von dieser Einstellung können Sie die YouTube-Cookies auch direkt auf den Videos auf dieser Website akzeptieren.
         </p>
         <p class="cookieconsent-banner__p">
           <a href="https://www.hitex.com/company/support/privacy-policy/cookies/" title="Link zu den Cookie Informationen">Weitere Informationen</a>
@@ -107,8 +107,9 @@ function deleteScriptIncluding(includeText) {
   })
 }
 
-var piAId;
-var piCId;
+var piAId; // eslint-disable-line no-unused-vars
+var piCId; // eslint-disable-line no-unused-vars
+var piHostname; // eslint-disable-line no-unused-vars
 
 function enablePardot () {
     piAId = window.cookieconsent.pardot.piAId;
@@ -188,7 +189,7 @@ function disableYoutube() {
  * COOKIECONSENT COMMON CODE 
  */
 
-consentBanner = document.createElement("DIV");
+const consentBanner = document.createElement("DIV");
 consentBanner.className="cookieconsent";
 document.body.appendChild(consentBanner)
 
@@ -231,7 +232,7 @@ function hideCookieConsentBanner() {
   `
 }
 
-function showCookieConsentSettings() {
+function showCookieConsentSettings() {// eslint-disable-line no-unused-vars
   let checkboxes = ""
   Object.keys(window.cookieconsent.options).forEach((key) => {
     const cookie = window.cookieconsent.options[key];
@@ -294,7 +295,7 @@ function updateCookieConsent(cc) {
   } else if (cc === "deny") {
     Object.keys(window.cookieconsent.options).forEach(denyOption);
   } else if (cc.startsWith("allowOnly:")) {
-    allowedOptions = cc.substring("allowOnly:".length).split(",");
+    const allowedOptions = cc.substring("allowOnly:".length).split(",");
     allowedOptions.filter(notNullOrEmpty).forEach(allowOption);
     Object.keys(window.cookieconsent.options).filter(key => {
       return !allowedOptions.includes(key)
@@ -320,21 +321,21 @@ function denyOption(key) {
   }
 }
 
-function allowAll() {
+function allowAll() {// eslint-disable-line no-unused-vars
   let value = "allow";
   saveCookieConsent(value);
   updateCookieConsent(value);
   hideCookieConsentBanner();
 }
 
-function denyAll() {
+function denyAll() {// eslint-disable-line no-unused-vars
   let value = "deny";
   saveCookieConsent(value);
   updateCookieConsent(value);
   hideCookieConsentBanner();
 }
 
-function allowOnly() {
+function allowOnly() {// eslint-disable-line no-unused-vars
   let value = "allowOnly:" + Array.from(document.getElementsByClassName("js-cookieconsent__checkbox"))
     .filter(el => el.checked)
     .map(el => el.value)
