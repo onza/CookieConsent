@@ -1,7 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title>CookieConsent demo</title>
-    <link rel="stylesheet" href="lib/css/CookieConsent.css">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../lib/css/CookieConsent.css">
     <style>
       html,
       body {
@@ -11,19 +15,15 @@
         font-family: Arial, Helvetica, sans-serif;
       }
       .container {
-        margin: auto;
+        margin: 20px auto;
         padding: 20px;
-        width: 100%;
+        width: 80%;
         max-width: 1200px;
         background-color: #fff;
       }
-      h1 { text-align: center; margin: 100px 0 60px; }
-      .gh-buttons { float: right; }
-      .gh-buttons::after { clear: both; }
-      .youtubevideo {
-        display: block;
-        margin: auto;
-      }
+      h1 { margin: 100px 0 60px; text-align: center; }
+      .gh-buttons { width: 70%; text-align: center; }
+      .youtubevideo { display: block; margin: auto; }
     </style>
   </head>
   <body>
@@ -45,7 +45,8 @@
         </div>
       </div>
     </div>
-    <script src="lib/js/CookieConsent.js"></script>
+    <script src="../lib/js/polyfills.js"></script>
+    <script src="../lib/js/CookieConsent.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>

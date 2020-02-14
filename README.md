@@ -13,8 +13,8 @@
 * Cookie settings can be changed via checkboxes on the banner.
 * Cookies in the banner settings are grouped as "Essential Cookies", "Marketing/Analysis", "YouTube" but can be changed easily.
 * Already accepted cookies are not deleted, but the scripts are removed from the DOM. Further read e.g. [Google Developers Guide](https://developers.google.com/analytics/devguides/collection/gtagjs/user-opt-out).
-* Multilanguage support.
-* \>= IE 11 support (not tested below IE11)
+* Multilanguage support by reading out the lang attribute.
+* \>= IE 11 support (not tested below IE11) by polyfills.
 
 <br>
 
