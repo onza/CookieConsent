@@ -16,7 +16,8 @@ function buildjs() {
     .pipe(babel({
       presets: ['@babel/preset-env']
     }))
-    .pipe(dest('lib/js/'));
+    .pipe(dest('lib/js/'))
+    .pipe(dest('docs/lib/js/'));
 }
 
 function buildcss() {
@@ -26,6 +27,7 @@ function buildcss() {
       cascade: false
     }))
   .pipe(dest('lib/css/'))
+  .pipe(dest('docs/lib/css/'))
 }
 
 const build = parallel(buildjs, buildcss)
