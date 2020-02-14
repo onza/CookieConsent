@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d lib"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -24,9 +24,12 @@
     "del": "^5.1.0",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
   },
   "dependencies": {
+    "core-js": "^3.6.4",
     "gulp": "^4.0.2"
   },
   "browserslist": "ie 11"
