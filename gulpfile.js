@@ -4,20 +4,29 @@ const autoprefixer = require('gulp-autoprefixer')
 const babel = require('gulp-babel')
 const eslint = require('gulp-eslint')
 const del = require('del')
+const webpack = require('webpack')
+const webpack_stream = require('webpack-stream')
+const webpack_config = require('./webpack.config.js')
 
 function clean() {
   return del(['lib/**', '!lib'], {force:true});
 }
 
 function buildjs() {
-  return src('src/js/*.js')
+  return src('src/js/CookieConsent.js')
     .pipe(eslint())
     .pipe(eslint.failAfterError())
     .pipe(babel({
       presets: ['@babel/preset-env']
     }))
     .pipe(dest('lib/js/'))
-    .pipe(dest('docs/lib/js/'));
+    .pipe(dest('docs/lib/js/'))
+}
+
+function buildPolyfills() {
+  return webpack_stream(webpack_config)
+    .pipe(dest('lib/js/'))
+    .pipe(dest('docs/lib/js/'))
 }
 
 function buildcss() {
@@ -30,7 +39,7 @@ function buildcss() {
   .pipe(dest('docs/lib/css/'))
 }
 
-const build = parallel(buildjs, buildcss)
+const build = parallel(buildjs, buildPolyfills, buildcss)
 
 exports.default = series(clean, build);
 exports.clean = clean;
