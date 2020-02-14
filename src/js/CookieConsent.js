@@ -201,9 +201,9 @@ function showCookieConsentBanner() {
           <h3 class="cookieconsent-banner__h3">Use of cookies</h3>
           <p class="cookieconsent-banner__p">We would like to use cookies to better understand your use of this website. This enables us to improve your future user experience on our website and to provide you with interest-based advertising and tailored content on our website as outside our website by partners. You can change or revoke your cookie settings at any time. </p>
           <p class="cookieconsent-banner__p"><a href="https://www.hitex.com/company/support/privacy-policy/" title="Link to Privacy Policy">Privacy Policy</a> and <a href="https://www.hitex.com/imprint/" title="Link to Imprint">Imprint</a></p>
-          <!-- <button onclick='denyAll()'> Deny </button> -->
           <button class="cookieconsent-banner__button--settings" onclick='showCookieConsentSettings()' title="Link to view and change cookie settings">View and change cookie settings</button>
-          <button class="cookieconsent-banner__button" onclick='allowAll()'>Accept</button>
+          <button class="cookieconsent-banner__button--deny" onclick='denyAll()'>Deny</button>
+          <button class="cookieconsent-banner__button--accept" onclick='allowAll()'>Accept</button>
         </div>
       </div>
     `;
@@ -216,9 +216,9 @@ function showCookieConsentBanner() {
           <h3 class="cookieconsent-banner__h3">Nutzung von Cookies</h3>
           <p class="cookieconsent-banner__p">Wir möchten Cookies verwenden, um Ihre Nutzung dieser Webseite besser zu verstehen. Dies ermöglicht es uns, Ihr zukünftiges Nutzererlebnis auf unserer Webseite zu verbessern und Ihnen interessenbezogene Werbung und maßgeschneiderte Inhalte sowohl auf unserer Webseite als auch außerhalb unserer Webseite durch Partner zu präsentieren. Sie können Ihre Cookie-Einstellungen jederzeit ändern oder widerrufen. </p>
           <p class="cookieconsent-banner__p"><a href="https://www.hitex.com/company/support/privacy-policy/" title="Link zur Datenschutzerklärung">Datenschutzerklärung</a> und <a href="https://www.hitex.com/imprint/" title="Link zum Impressum">Impressum</a></p>
-          <!-- <button onclick='denyAll()'> Deny </button> -->
           <button class="cookieconsent-banner__button--settings" onclick='showCookieConsentSettings()' title="Link zum Anzeigen und Ändern der Cookie Einstellungen">Anzeigen und Ändern der Cookie Einstellungen</button>
-          <button class="cookieconsent-banner__button" onclick='allowAll()'>Akzeptieren</button>
+          <button class="cookieconsent-banner__button--deny" onclick='denyAll()'>Ablehnen</button>
+          <button class="cookieconsent-banner__button--accept" onclick='allowAll()'>Akzeptieren</button>
         </div>
       </div>
     `;

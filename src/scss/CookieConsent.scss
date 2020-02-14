@@ -75,6 +75,7 @@
     }
   }
 button.cookieconsent-banner__button--settings {
+  display: block;
   color: #333;
   line-height: 1.1;
   font-size: 1.0rem;
@@ -84,7 +85,7 @@ button.cookieconsent-banner__button--settings {
   background: none;
   border: none;
 }
-.cookieconsent-banner__button {
+.cookieconsent-banner__button--accept {
   color: #fff;
   line-height: 1.1;
   font-size: 1.0rem;
@@ -93,15 +94,29 @@ button.cookieconsent-banner__button--settings {
   background-color: #aec067;
   border: 1px solid #aec067;
   @media (max-width: 599px) {
+      margin: 15px 0 0;
       width: 100%;
     }
   }
 }
+.cookieconsent-banner__button--deny {
+  color: #fff;
+  line-height: 1.1;
+  font-size: 1.0rem;
+  margin: 30px 0 0;
+  padding: 5px 40px;
+  background-color: #fd3f3f;
+  border: 1px solid #fd3f3f;
+  @media (max-width: 599px) {
+    margin: 30px 0 0;
+    width: 100%;
+  }
+}
 @media (min-width: 600px) {
-  button.cookieconsent-banner__button--settings {
+  .cookieconsent-banner__button--deny {
     float: left;
   }
-  .cookieconsent-banner__button {
+  .cookieconsent-banner__button--accept {
     float: right;
   }
 }
