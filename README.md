@@ -2,7 +2,7 @@
 
 ### A cookie consent opt-in implementation script for websites
 
-[Watch Demo](https://onza.github.io/cookieConsent)
+[Watch Demo](https://onza.github.io/CookieConsent)
 
 ## Features
 * Until now Google Analytics, Pardot (Salesforce), YouTube (just replace GA & Pardot ID...)
