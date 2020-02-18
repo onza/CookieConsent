@@ -252,7 +252,7 @@ function showCookieConsentSettings() {// eslint-disable-line no-unused-vars
             <p class="cookieconsent-banner__p"><a href="http://www.domain-xyz.com/privacy-policy/" title="Link to Cookie Informations">More details</a></p>
             ${checkboxes}
           </div>
-          <button class="cookieconsent-banner__button is-centered" onclick='allowOnly()'>Confirm Selection</button>
+          <button class="cookieconsent-banner__settings-button is-centered" onclick='allowOnly()'>Confirm Selection</button>
           <!-- <button onclick='showCookieConsentBanner()'> back </button> -->
         </div>
       </div> 
@@ -271,7 +271,7 @@ function showCookieConsentSettings() {// eslint-disable-line no-unused-vars
           <p class="cookieconsent-banner__p"><a href="http://www.domain-xyz.com/datenschutz/" title="Link to Cookie Informations">More details</a></p>
           ${checkboxes}
         </div>
-        <button class="cookieconsent-banner__button is-centered" onclick='allowOnly()'>Auswahl bestätigen</button>
+        <button class="cookieconsent-banner__settings-button is-centered" onclick='allowOnly()'>Auswahl bestätigen</button>
         <!-- <button onclick='showCookieConsentBanner()'> zurück </button> -->
       </div>
     </div> 
