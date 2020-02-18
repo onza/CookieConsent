@@ -6,6 +6,9 @@
 */
 /* cookie consent banner
 --------------------------------------------------------------------------------------------------------- */
+button {
+  cursor: pointer; }
+
 .cookieconsent__settings-button {
   position: fixed;
   bottom: 0;
