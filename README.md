@@ -121,7 +121,7 @@ remove following line in all languages in `src/js/CookieConsent.js`
 
 ### Not happy with the layout?
 
-Define your own CSS-Layout. Adapt file `src/css/CookieConsent.css` to your needs.
+Define your own CSS-Layout. Adapt file `src/scss/CookieConsent.scss` to your needs.
 
 <br>
 
