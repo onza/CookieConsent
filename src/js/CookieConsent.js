@@ -28,7 +28,7 @@ window.cookieconsent = {
           level to provide you relevant content and services.
         </p>
         <p class="cookieconsent-banner__p">
-          <a href="https://www.hitex.com/company/support/privacy-policy/cookies/" title="Link to Cookie Informations">More details</a>
+          <a href="http://www.mywebsite.com/privacy-policy/" title="Link to Cookie Informations">More details</a>
         </p>
       `,
       text_de: `
@@ -40,7 +40,7 @@ window.cookieconsent = {
           um Ihnen relevante Inhalte und Dienste anbieten zu können.
         </p>
         <p class="cookieconsent-banner__p">
-          <a href="https://www.hitex.com/company/support/privacy-policy/cookies/" title="Link zu den Cookie Informationen">Weitere Informationen</a>
+          <a href="http://www.mywebsite.com/datenschutz/" title="Link zu den Cookie Informationen">Weitere Informationen</a>
         </p>
       `
     },
@@ -54,7 +54,7 @@ window.cookieconsent = {
           directly on the videos on this website.
         </p>
         <p class="cookieconsent-banner__p">
-          <a href="https://www.hitex.com/company/support/privacy-policy/cookies/" title="Link to Cookie Informations">More details</a>
+          <a href="http://www.mywebsite.com/privacy-policy/" title="Link to Cookie Informations">More details</a>
         </p>
       `,
       text_de: `
@@ -64,7 +64,7 @@ window.cookieconsent = {
           Unabhängig von dieser Einstellung können Sie die YouTube-Cookies auch direkt auf den Videos auf dieser Website akzeptieren.
         </p>
         <p class="cookieconsent-banner__p">
-          <a href="https://www.hitex.com/company/support/privacy-policy/cookies/" title="Link zu den Cookie Informationen">Weitere Informationen</a>
+          <a href="http://www.mywebsite.com/privacy-policy/" title="Link zu den Cookie Informationen">Weitere Informationen</a>
         </p>
       `
     }
@@ -200,7 +200,7 @@ function showCookieConsentBanner() {
         <div class='cookieconsent-banner'>
           <h3 class="cookieconsent-banner__h3">Use of cookies</h3>
           <p class="cookieconsent-banner__p">We would like to use cookies to better understand your use of this website. This enables us to improve your future user experience on our website and to provide you with interest-based advertising and tailored content on our website as outside our website by partners. You can change or revoke your cookie settings at any time. </p>
-          <p class="cookieconsent-banner__p"><a href="https://www.hitex.com/company/support/privacy-policy/" title="Link to Privacy Policy">Privacy Policy</a> and <a href="https://www.hitex.com/imprint/" title="Link to Imprint">Imprint</a></p>
+          <p class="cookieconsent-banner__p"><a href="http://www.mywebsite.com/privacy-policy/" title="Link to Privacy Policy">Privacy Policy</a> and <a href="http://www.mywebsite.com/imprint/" title="Link to Imprint">Imprint</a></p>
           <button class="cookieconsent-banner__button--settings" onclick='showCookieConsentSettings()' title="Link to view and change cookie settings">View and change cookie settings</button>
           <button class="cookieconsent-banner__button--deny" onclick='denyAll()'>Deny</button>
           <button class="cookieconsent-banner__button--accept" onclick='allowAll()'>Accept</button>
@@ -215,7 +215,7 @@ function showCookieConsentBanner() {
         <div class='cookieconsent-banner'>
           <h3 class="cookieconsent-banner__h3">Nutzung von Cookies</h3>
           <p class="cookieconsent-banner__p">Wir möchten Cookies verwenden, um Ihre Nutzung dieser Webseite besser zu verstehen. Dies ermöglicht es uns, Ihr zukünftiges Nutzererlebnis auf unserer Webseite zu verbessern und Ihnen interessenbezogene Werbung und maßgeschneiderte Inhalte sowohl auf unserer Webseite als auch außerhalb unserer Webseite durch Partner zu präsentieren. Sie können Ihre Cookie-Einstellungen jederzeit ändern oder widerrufen. </p>
-          <p class="cookieconsent-banner__p"><a href="https://www.hitex.com/company/support/privacy-policy/" title="Link zur Datenschutzerklärung">Datenschutzerklärung</a> und <a href="https://www.hitex.com/imprint/" title="Link zum Impressum">Impressum</a></p>
+          <p class="cookieconsent-banner__p"><a href="http://www.mywebsite.com/datenschutz/" title="Link zur Datenschutzerklärung">Datenschutzerklärung</a> und <a href="http://www.mywebsite.com/impressum/" title="Link zum Impressum">Impressum</a></p>
           <button class="cookieconsent-banner__button--settings" onclick='showCookieConsentSettings()' title="Link zum Anzeigen und Ändern der Cookie Einstellungen">Anzeigen und Ändern der Cookie Einstellungen</button>
           <button class="cookieconsent-banner__button--deny" onclick='denyAll()'>Ablehnen</button>
           <button class="cookieconsent-banner__button--accept" onclick='allowAll()'>Akzeptieren</button>
@@ -249,7 +249,7 @@ function showCookieConsentSettings() {// eslint-disable-line no-unused-vars
             <input disabled="" type="checkbox" name="technical-required-cookies" value="technical-required-cookies" checked="">
             <label class="cookieconsent-banner__settings-label--required" for="technical-required-cookies">Technically required cookies - always selected by default</label>
             <p class="cookieconsent-banner__p">By technically required cookies we mean cookies without those the technical provision of the online service cannot be ensured. These include e.g. cookies supporting essential services like a smooth reproduction of video or audio footage. So called ‘functional cookies’ are also assigned belonging to this category. Functional cookies store information in order to provide you comfortable use of our online services (e.g. language selection). The legal basis for the processing of personal data by means of cookies of this category is Infineon’s legitimate interest. This includes, among other things, the interest in having a professional external presentation as well as an optimal balancing of the loads on the server due to technical reasons.</p>
-            <p class="cookieconsent-banner__p"><a href="https://www.hitex.com/company/support/privacy-policy/cookies/" title="Link to Cookie Informations">More details</a></p>
+            <p class="cookieconsent-banner__p"><a href="http://www.mywebsite.com/privacy-policy/" title="Link to Cookie Informations">More details</a></p>
             ${checkboxes}
           </div>
           <button class="cookieconsent-banner__button is-centered" onclick='allowOnly()'>Confirm Selection</button>
@@ -268,7 +268,7 @@ function showCookieConsentSettings() {// eslint-disable-line no-unused-vars
           <input disabled="" type="checkbox" name="technical-required-cookies" value="technical-required-cookies" checked="">
           <label class="cookieconsent-banner__settings-label--required" for="technical-required-cookies">Technisch erforderliche Cookies - standardmäßig immer ausgewählt</label>
           <p class="cookieconsent-banner__p">Unter technisch erforderlichen Cookies verstehen wir Cookies, ohne die die technische Bereitstellung des Online-Angebots nicht gewährleistet werden kann. Dazu gehören z.B. Cookies, die wesentliche Dienste wie eine reibungslose Wiedergabe von Video- oder Audioaufnahmen unterstützen. Dieser Kategorie werden auch so genannte "funktionale Cookies" zugeordnet. Funktionale Cookies speichern Informationen, um Ihnen eine komfortable Nutzung unserer Online-Services (z.B. Sprachauswahl) zu ermöglichen. Rechtsgrundlage für die Verarbeitung personenbezogener Daten mit Hilfe von Cookies dieser Kategorie sind berechtigte Interessen von Infineon. Hierzu gehören u.a. das Interesse an einer professionellen Außendarstellung sowie an einer optimalen Verteilung der Lasten auf dem Server aus technischen Gründen.</p>
-          <p class="cookieconsent-banner__p"><a href="https://www.hitex.com/company/support/privacy-policy/cookies/" title="Link to Cookie Informations">More details</a></p>
+          <p class="cookieconsent-banner__p"><a href="http://www.mywebsite.com/datenschutz/" title="Link to Cookie Informations">More details</a></p>
           ${checkboxes}
         </div>
         <button class="cookieconsent-banner__button is-centered" onclick='allowOnly()'>Auswahl bestätigen</button>
