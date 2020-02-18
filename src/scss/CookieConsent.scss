@@ -8,6 +8,10 @@
 /* cookie consent banner
 --------------------------------------------------------------------------------------------------------- */
 
+button {
+  cursor: pointer;
+}
+
 // settings button
 .cookieconsent__settings-button {
   position: fixed;
