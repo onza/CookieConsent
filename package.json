@@ -33,8 +33,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "gulp": "^4.0.2",
-    "minimist": "^1.2.5"
+    "gulp": "^4.0.2"
   },
   "browserslist": "ie 11"
 }
