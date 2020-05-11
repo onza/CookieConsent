@@ -29,11 +29,11 @@
     "gulp-sass": "^4.1.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
-    "webpack-stream": "^5.2.1"
-  },
-  "dependencies": {
+    "webpack-stream": "^5.2.1",
     "core-js": "^3.6.5",
     "gulp": "^4.0.2"
+  },
+  "dependencies": {
   },
   "browserslist": "ie 11"
 }
