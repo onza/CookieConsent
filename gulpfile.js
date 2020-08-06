@@ -4,7 +4,6 @@ const autoprefixer = require('gulp-autoprefixer')
 const babel = require('gulp-babel')
 const eslint = require('gulp-eslint')
 const del = require('del')
-const webpack = require('webpack')
 const webpack_stream = require('webpack-stream')
 const webpack_config = require('./webpack.config.js')
 
