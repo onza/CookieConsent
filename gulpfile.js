@@ -1,4 +1,4 @@
-const { series, parallel, src, dest } = require('gulp');
+const { series, parallel, src, dest } = require('gulp')
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const babel = require('gulp-babel')
