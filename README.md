@@ -4,6 +4,10 @@
 
 [Watch Demo](https://onza.github.io/CookieConsent)
 
+Please note that this solution was created so that we ourselves could better understand the topic of cookie consents. However, the solution is actually used several times, works well and can also be expanded without any problems.
+
+If you are looking for a cookie consent solution that has many relevant services already integrated, you should take a look at [Klaro](https://github.com/kiprotect/klaro).
+
 ## Features
 * Until now Google Analytics, Pardot (Salesforce), YouTube (just replace GA & Pardot ID...)
 * Cookie providers that are not required can be commented out or deleted.
