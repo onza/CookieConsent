@@ -1,44 +1,60 @@
-const { series, parallel, src, dest } = require('gulp')
-const sass = require('gulp-sass')(require('sass'))
-const autoprefixer = require('gulp-autoprefixer')
-const babel = require('gulp-babel')
-const eslint = require('gulp-eslint')
-const del = require('del')
-const webpack_stream = require('webpack-stream')
-const webpack_config = require('./webpack.config.js')
+var gulp = require('gulp'),
+    del = require('del'),
+    sass = require('gulp-sass')(require('sass')),
+    cleancss = require('gulp-clean-css'),
+    rename = require('gulp-rename'),
+    autoprefixer = require('gulp-autoprefixer'),
+    terser = require('gulp-terser'),
+    eslint = require('gulp-eslint'),
+    browsersync = require('browser-sync').create();
 
 function clean() {
-  return del(['lib/**', '!lib'], {force:true});
+  return del([
+    'lib/**',
+    '!lib',
+    'docs/lib'
+  ]);
 }
 
 function buildjs() {
-  return src('src/js/CookieConsent.js')
+  return gulp.src('src/js/CookieConsent.js')
     .pipe(eslint())
     .pipe(eslint.failAfterError())
-    .pipe(babel({
-      presets: ['@babel/preset-env']
+    .pipe(gulp.dest('lib/js/'))
+    .pipe(gulp.dest('docs/lib/js/'))
+    .pipe(terser())
+    .pipe(rename({
+      suffix: '.min'
     }))
-    .pipe(dest('lib/js/'))
-    .pipe(dest('docs/lib/js/'))
-}
-
-function buildPolyfills() {
-  return webpack_stream(webpack_config)
-    .pipe(dest('lib/js/'))
-    .pipe(dest('docs/lib/js/'))
+    .pipe(gulp.dest('lib/js/'))
 }
 
 function buildcss() {
-  return src('src/scss/CookieConsent.scss')
+  return gulp.src('src/scss/CookieConsent.scss')
     .pipe(sass())
     .pipe(autoprefixer({
       cascade: false
     }))
-  .pipe(dest('lib/css/'))
-  .pipe(dest('docs/lib/css/'))
+    .pipe(gulp.dest('lib/css/'))
+    .pipe(cleancss())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+  .pipe(gulp.dest('lib/css/'))
+  .pipe(gulp.dest('docs/lib/css/'))
 }
 
-const build = parallel(buildjs, buildPolyfills, buildcss)
+function watch() {
+  browsersync.init({
+    server: {
+      baseDir: './docs/'
+    }
+  });
+  gulp.watch('docs/index.html', buildjs).on('change', browsersync.reload),
+  gulp.watch('src/scss', buildcss).on('change', browsersync.reload),
+  gulp.watch('src/js').on('change', browsersync.reload)
+}
 
-exports.default = series(clean, build);
-exports.clean = clean;
+var build = gulp.series(clean, buildjs, buildcss, watch);
+
+exports.default = build;
