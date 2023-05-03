@@ -196,15 +196,17 @@ function showCookieConsentBanner() {
           <p>We would like to use cookies to better understand your use of this website. This enables us to improve your future user experience on our website and to provide you with interest-based advertising and tailored content on our website as outside our website by partners. You can change or revoke your cookie settings at any time. </p>
           <div class="cc-banner_btns">
             <button class="cc-banner_btn-settings" onclick='showCookieConsentSettings()' title="Link to view and change cookie settings">View and change cookie settings</button>
-            <!--<button class="cc-banner-btn-deny" onclick='denyAll()'>Deny</button>-->
             <button class="cc-banner_btn" onclick='allowAll()'>Accept</button>
           </div>
-          <p class="cc-banner_btn-privacy-links"><a href="http://www.domain-xyz.com/privacy-policy/" title="Link to Privacy Policy">Privacy Policy</a></p>
+          <div class="cc-banner_btns2">
+            <button class="cc-banner_btn-deny" onclick='denyAll()'>Deny</button>
+            <p class="cc-banner_btn-privacy-links"><a href="http://www.domain-xyz.com/privacy-policy/" title="Link to Privacy Policy">Privacy Policy</a></p>
+          </div
         </div>
       </div>
     `;
   // } else if (document.documentElement.lang === 'fr' ) { 
-  //   consentBanner.innerHtml = `franzoesischer text`
+  //   consentBanner.innerHtml = `french text`
   } else {
     consentBanner.innerHTML = `
       <div class='cc_overlay'>
@@ -213,10 +215,12 @@ function showCookieConsentBanner() {
           <p>Wir möchten Cookies verwenden, um Ihre Nutzung dieser Webseite besser zu verstehen. Dies ermöglicht es uns, Ihr zukünftiges Nutzererlebnis auf unserer Webseite zu verbessern und Ihnen interessenbezogene Werbung und maßgeschneiderte Inhalte sowohl auf unserer Webseite als auch außerhalb unserer Webseite durch Partner zu präsentieren. Sie können Ihre Cookie-Einstellungen jederzeit ändern oder widerrufen. </p>
           <div class="cc-banner_btns">
             <button class="cc-banner_btn-settings" onclick='showCookieConsentSettings()' title="Link zum Anzeigen und Ändern der Cookie Einstellungen">Anzeigen und Ändern der Cookie Einstellungen</button>
-            <!--<button class="cc-banner_btn--deny" onclick='denyAll()'>Ablehnen</button>-->
             <button class="cc-banner_btn" onclick='allowAll()'>Akzeptieren</button>
           </div>
-          <p class="cc-banner_btn-privacy-links"><a href="http://www.domain-xyz.com/datenschutz/" title="Link zur Datenschutzerklärung">Datenschutzerklärung</a></p>
+          <div class="cc-banner_btns2">
+            <button class="cc-banner_btn-deny" onclick='denyAll()'>Ablehnen</button>
+            <p class="cc-banner_btn-privacy-links"><a href="http://www.domain-xyz.com/datenschutz/" title="Link zur Datenschutzerklärung">Datenschutzerklärung</a></p>
+          </div>
         </div>
       </div>
     `;

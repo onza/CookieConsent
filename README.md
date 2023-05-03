@@ -122,12 +122,12 @@ Then run command `gulp` and use the new created scripts in lib folder
 
 <br>
 
-### Add a deny button
+### Remove deny button
 
-Activate the following line in all languages in `src/js/CookieConsent.js` and add some styles.
+Remove the following line in all languages in `src/js/CookieConsent.js` and change the styles.
 
 ```html
-<!--<button class="cc-banner-btn-deny" onclick='denyAll()'>Deny</button>-->
+<button class="cc-banner_btn-deny" onclick='denyAll()'>Deny</button>
 ```
 
 <br>

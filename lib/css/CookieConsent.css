@@ -102,16 +102,32 @@
   background-color: var(--c-btn-blue);
   border: none;
 }
-.cookieconsent .cc-banner .cc-banner_btn-privacy-links {
+.cookieconsent .cc-banner .cc-banner_btns2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 1.25rem 0 0;
-  text-align: center;
 }
-.cookieconsent .cc-banner .cc-banner_btn-privacy-links a {
+.cookieconsent .cc-banner .cc-banner_btns2 .cc-banner_btn-deny {
+  padding: 0;
+  margin: 0 0.75rem 0 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--c-text);
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+}
+.cookieconsent .cc-banner .cc-banner_btns2 .cc-banner_btn-privacy-links {
+  margin: 0 0 0 0.75rem;
+}
+.cookieconsent .cc-banner .cc-banner_btns2 .cc-banner_btn-privacy-links a {
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--c-text);
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
 }
 .cookieconsent .cc-banner_settings_label,
 .cookieconsent .cc-banner_settings_label-required {
