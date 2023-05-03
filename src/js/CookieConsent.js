@@ -33,6 +33,7 @@ window.cookieconsent = {
           <label class="cc-banner_settings_label" for="option1">Marketing / Analyse</label>
         </div>
         <p>
+          Unter Performance- und Marketing-Cookies verstehen wir technisch nicht notwendige Cookies.
           Wir verwenden Performance und Marketing Cookies nur, wenn Sie uns zuvor Ihre Einwilligung gegeben haben.
           Mit solchen Cookies erfassen wir Informationen darüber, wie Besucher mit unserer Webseite interagieren und welche Seiten sie besucht haben.
           Dies hilft uns, die Benutzeraktivitäten auf unserer Website sowohl auf aggregierter als auch auf persönlicher Ebene zu verstehen,
