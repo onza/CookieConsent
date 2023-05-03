@@ -275,7 +275,7 @@ function showCookieConsentSettings() {// eslint-disable-line no-unused-vars
             <label class="cc-banner_settings_label-required" for="technical-required-cookies">Technisch erforderliche Cookies - standardmäßig immer ausgewählt</label>
           </div>
           <p>Unter technisch erforderlichen Cookies verstehen wir Cookies, ohne die die technische Bereitstellung des Online-Angebots nicht gewährleistet werden kann. Dazu gehören z.B. Cookies, die wesentliche Dienste wie eine reibungslose Wiedergabe von Video- oder Audioaufnahmen unterstützen. Dieser Kategorie werden auch so genannte "funktionale Cookies" zugeordnet. Funktionale Cookies speichern Informationen, um Ihnen eine komfortable Nutzung unserer Online-Services (z.B. Sprachauswahl) zu ermöglichen. Rechtsgrundlage für die Verarbeitung personenbezogener Daten mit Hilfe von Cookies dieser Kategorie sind berechtigte Interessen von uns. Hierzu gehören u.a. das Interesse an einer professionellen Außendarstellung sowie an einer optimalen Verteilung der Lasten auf dem Server aus technischen Gründen.</p>
-          <a class="cc-banner_more" href="http://www.domain-xyz.com/datenschutz/" title="Link to Cookie Informations">More details</a>
+          <a class="cc-banner_more" href="http://www.domain-xyz.com/datenschutz/" title="Link to Cookie Informations">Weitere Informationen</a>
           ${checkboxes}
         </div>
         <button class="cc-banner_settings-btn" onclick='allowOnly()'>Auswahl bestätigen</button>
