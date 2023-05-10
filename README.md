@@ -11,11 +11,10 @@ Feel free to customize it for your own needs.
 * So far, it works for the scripts from Google Analytics, Pardot (Salesforce), and YouTube/Vimeo.
 * Cookie providers that are not required can be commented out or deleted.
 * Extendable for other cookies.
-* YouTube/Vimeo cookies can either be confirmed by the cookie banner or directly on the overlay of the videos (HTML structure has to be adjusted - see below).
+* YouTube/Vimeo can either be confirmed by the cookie banner or directly on the overlay of the videos (HTML structure has to be adjusted - see below).
 * CSS for Consent Banner and for YouTube Video overlay.
 * Cookie settings can be changed via checkboxes on the banner.
 * Cookies in the banner settings are grouped as "Essential Cookies", "Marketing/Analysis", "YouTube" but can be changed easily.
-* Already accepted cookies are not deleted, Pardot scripts will be removed from the DOM. Google Analytics script will not be deleted. Instead it will be deactivated as described in Google Analytics Opt-Out. Further read [Google Developers Guide](https://developers.google.com/analytics/devguides/collection/gtagjs/user-opt-out).
 * Multilanguage support by reading out the lang attribute.
 * Kicked out! (March 2023): To support IE 11 (not tested below IE11) include lib/js/polyfills.js before CookieConsent.js.
 
