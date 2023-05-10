@@ -11,7 +11,7 @@
   --c-bg-grey-darker: hsl(205, 20%, 90%);
 }
 
-.cookieconsent__settings-button {
+.cookieconsent_settings-button {
   position: fixed;
   bottom: 0;
   left: 3rem;
@@ -25,7 +25,7 @@
   font-size: 0.875rem;
   transition: 0.2s;
 }
-.cookieconsent__settings-button:hover {
+.cookieconsent_settings-button:hover {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   cursor: pointer;
@@ -117,6 +117,7 @@
   text-transform: uppercase;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .cookieconsent .cc-banner .cc-banner_btns2 .cc-banner_btn-privacy-links {
   margin: 0 0 0 0.75rem;
