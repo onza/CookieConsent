@@ -88,6 +88,8 @@ const cookieconsent_cookie_fn = {
   }
 }
 
+
+// Pardot - start -
 function disablePardot () {
   deleteScriptIncluding("pardot.com");
 }
@@ -116,8 +118,10 @@ function enablePardot () {
     var c = document.getElementsByTagName('script')[0]; 
     c.parentNode.insertBefore(s, c);
 }
+// Pardot - end -
 
-// https://developers.google.com/analytics/devguides/collection/gtagjs
+
+// Google Analytics - start -
 function enableGooglesitetag () {
   window['ga-disable-' + window.cookieconsent.googlesitetag.gt_id] = false;
 
@@ -136,19 +140,17 @@ function enableGooglesitetag () {
     window.dataLayer.push(arguments);
   }
   gtag('js', new Date());
-  gtag('config', window.cookieconsent.googlesitetag.gt_id, { 'anonymize_ip': true });
+  gtag('config', window.cookieconsent.googlesitetag.gt_id);
   window.cookieconsent.googlesitetag.script_loaded = true;
 }
 
 function disableGooglesitetag () {
-  // disable google analytics, existing cookies will not be deleted
-  // existing cookies will neither be updated nor sent to google
-  // see: https://developers.google.com/analytics/devguides/collection/gtagjs/user-opt-out
   window['ga-disable-' + window.cookieconsent.googlesitetag.gt_id] = true;
-  // if we remove the script and then the user activates the cookies, the script will not be added to dom
-  // we have to add the script manually. Therefore we don't delete the script
 }
+// Google Analytics - end  -
 
+
+// Youtube - start -
 function showVideo(contentElementId) {
   var video_parent_div = document.getElementById(contentElementId)
   var video_iframe = video_parent_div.querySelector('iframe');
@@ -178,6 +180,9 @@ function disableVideo() {
     hideVideo(video_parent_div.id);
   });
 }
+// Youtube - end -
+
+
 
 /*
  * ==========================
@@ -231,7 +236,7 @@ function showCookieConsentBanner() {
 function hideCookieConsentBanner() {
   const buttontext = document.documentElement.lang === 'en' ? 'Cookie Settings' : 'Cookie Einstellungen';
   consentBanner.innerHTML = `
-    <button class="cookieconsent__settings-button" onclick="showCookieConsentBanner()">${buttontext}</button>
+    <button class="cookieconsent_settings-button" onclick="showCookieConsentBanner()">${buttontext}</button>
   `
 }
 
@@ -241,7 +246,7 @@ function showCookieConsentSettings() {// eslint-disable-line no-unused-vars
     const cookie = window.cookieconsent.options[key];
     var lang = document.documentElement.lang;
     const checked = cookie.allow ? 'checked' : '';
-    checkboxes += `<div class="form-check"><input class='js-cookieconsent__checkbox' type='checkbox' value='${key}' ${checked}> ${cookie['text_' + lang]}`
+    checkboxes += `<div class="form-check"><input class='js-cookieconsent_checkbox' type='checkbox' value='${key}' ${checked}> ${cookie['text_' + lang]}`
   })
   if (document.documentElement.lang === 'en') {
     consentBanner.innerHTML = `    
@@ -343,7 +348,7 @@ function denyAll() {// eslint-disable-line no-unused-vars
 }
 
 function allowOnly() {// eslint-disable-line no-unused-vars
-  let value = "allowOnly:" + Array.from(document.getElementsByClassName("js-cookieconsent__checkbox"))
+  let value = "allowOnly:" + Array.from(document.getElementsByClassName("js-cookieconsent_checkbox"))
     .filter(el => el.checked)
     .map(el => el.value)
     .join(',')
