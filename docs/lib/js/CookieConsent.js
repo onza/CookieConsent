@@ -236,7 +236,7 @@ function showCookieConsentBanner() {
 function hideCookieConsentBanner() {
   const buttontext = document.documentElement.lang === 'en' ? 'Cookie Settings' : 'Cookie Einstellungen';
   consentBanner.innerHTML = `
-    <button class="cookieconsent__settings-button" onclick="showCookieConsentBanner()">${buttontext}</button>
+    <button class="cookieconsent_settings-button" onclick="showCookieConsentBanner()">${buttontext}</button>
   `
 }
 
