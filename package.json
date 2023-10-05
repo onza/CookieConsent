@@ -20,7 +20,7 @@
     "browserslist": "^4.21.5",
     "del": "^5.1.0",
     "eslint": "^8.36.0",
-    "gulp-autoprefixer": "^7.0.1",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-eslint": "^6.0.0",
     "gulp-rename": "^2.0.0",
