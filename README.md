@@ -16,7 +16,6 @@ Feel free to customize it for your own needs.
 * Cookie settings can be changed via checkboxes on the banner.
 * Cookies in the banner settings are grouped as "Essential Cookies", "Marketing/Analysis", "YouTube" but can be changed easily.
 * Multilanguage support by reading out the lang attribute.
-* Kicked out! (March 2023): To support IE 11 (not tested below IE11) include lib/js/polyfills.js before CookieConsent.js.
 
 <br>
 
