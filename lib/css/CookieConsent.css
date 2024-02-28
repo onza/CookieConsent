@@ -15,7 +15,6 @@
   position: fixed;
   bottom: 0;
   left: 3rem;
-  -webkit-transform: translateY(0.875rem);
   transform: translateY(0.875rem);
   color: #fff;
   background-color: var(--c-btn-blue);
@@ -26,7 +25,6 @@
   transition: 0.2s;
 }
 .cookieconsent_settings-button:hover {
-  -webkit-transform: translateY(0);
   transform: translateY(0);
   cursor: pointer;
 }
@@ -50,7 +48,6 @@
   margin: 2rem auto;
   padding: 2rem;
   top: 20%;
-  -webkit-transform: translateY(-20%);
   transform: translateY(-20%);
   background-color: #fff;
   overflow: hidden;
@@ -247,7 +244,6 @@
     border-left: 0;
     left: 0.35rem;
     top: 0.2rem;
-    -webkit-transform: rotate(43deg);
     transform: rotate(43deg);
     opacity: var(--o, 0);
   }
