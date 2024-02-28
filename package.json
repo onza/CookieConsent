@@ -1,6 +1,6 @@
 {
   "name": "cookieconsent",
-  "version": "2.0.0",
+  "version": "2.2.0",
   "description": "Cookie Consent",
   "main": "index.js",
   "scripts": {
@@ -17,16 +17,15 @@
   },
   "homepage": "https://github.com/onza/CookieConsent#readme",
   "dependencies": {
-    "browserslist": "^4.21.5",
-    "del": "^5.1.0",
-    "eslint": "^8.36.0",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-eslint": "^6.0.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-terser": "^2.1.0"
   },
   "devDependencies": {
+    "browserslist": "^4.21.5",
+    "del": "^5.1.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-terser": "^2.1.0",
     "browser-sync": "^2.27.11",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.0.0",
@@ -35,7 +34,6 @@
   "browserslist": [
     "> 0.2%",
     "last 2 versions",
-    "not dead",
-    "ie 11"
+    "not dead"
   ]
 }
